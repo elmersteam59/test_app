@@ -11,7 +11,7 @@ const Form = () => {
     const data = { name, value };
 
     try {
-      const response = await axios.post('http://192.168.60.16:5000/add', data);
+      const response = await axios.post('http://127.0.0.1:5000/add', data);
       console.log(response.data.message);
     } catch (error) {
       console.error('Error submitting data', error);
